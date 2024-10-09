@@ -47,7 +47,3 @@ jobs:
         push: true
         tags: ahmadsyah2810/clinic-management-system:latest
 
-    - name: Debug Composer Install
-      run: |
-        echo "Running composer install for debugging..."
-        composer install -vvv

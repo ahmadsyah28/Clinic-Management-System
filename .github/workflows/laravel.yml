@@ -41,6 +41,12 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+    - name: Build and Push
+      uses: docker/build-push-action@v6
+      with:  
+        push: true
+        tags: ahmadsyah2810/clinic-management-system:latest
+
     - name: Debug Composer Install
       run: |
         echo "Running composer install for debugging..."
